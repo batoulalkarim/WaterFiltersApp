@@ -6,18 +6,19 @@ import Nav from '../Nav';
 import About from '../About';
 import Ourimpact from '../Ourimpact';
 import Partners from '../Partners';
-
+import Homevideo from '../Homevideo';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
      <Router>
        <div className='google'>
        <Login />
        </div>
      <Nav />
+     <Homevideo />
      <Switch>
-       <Route path="/homepage" component={Homepage}>
+       <Route path="/" component={Homepage}>
          <Homepage />
        </Route>
        <Route path="/about" component={About}>

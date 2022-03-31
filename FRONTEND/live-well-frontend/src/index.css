@@ -1,9 +1,30 @@
-
+.container {
+    flex-direction: row;
+}
 .google{
-    float: right;
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px; */
+    float: left;
+  
+}
+.nav {
+    padding: 20px;   
+}
+ .nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    float:right;
+}
+
+.nav li {
+    display: block;
+    padding: 5px 5px;
+    background-color: white;
+}
+li a {
+    text-decoration: none;
+}
+.homevid {
+    height: 200px;
 }

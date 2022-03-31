@@ -3,16 +3,24 @@ import { NavLink } from 'react-router-dom';
 
 function Nav(){
     return(
-        <nav>
-            <NavLink exact to='/homepage'>Home Page</NavLink>
+        <div className='nav'>
+             <br />
+             <h1>Water For All</h1>
+        <ul>
+            <li><NavLink exact to='/homepage'>Home Page</NavLink></li>
             <br />
-            <NavLink exact to='/about'>About</NavLink>
             <br />
-            <NavLink exact to='/ourimpact'>Our Impact</NavLink>
+            <li><NavLink exact to='/about'>About</NavLink></li>
             <br />
-            <NavLink exact to='/partners'>Partners</NavLink>
             <br />
-        </nav>
+            <li><NavLink exact to='/ourimpact'>Our Impact</NavLink></li>
+            <br />
+            <br />
+            <li><NavLink exact to='/partners'>Partners</NavLink></li>
+            <br />
+            <br />
+        </ul>
+        </div>
     )
 }
 export default Nav
